@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  python-app:
+    image: python:3.11-alpine
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python 02_concurrente.py
